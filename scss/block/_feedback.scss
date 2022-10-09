@@ -1,0 +1,135 @@
+// FEEDBACK STYLES
+.google-map{
+    width: 462px;
+    height: 649px;
+}
+.feedback-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 272px;
+}
+.site-form {
+    display: flex;
+    background-image: url('../../img/feedback/bg-2.png');
+}
+
+.site-form__text{
+    display: flex;
+    margin-left: 166px;
+    margin-right: 355px;
+    flex-direction: column;
+    align-items: start;
+}
+
+// FEEDBACK STYLES
+
+// FEEDBACK TEXT STYLES
+.form__h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    color: #FFFFFF;
+    margin-top: 62px;
+}
+.form-p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+    margin-bottom: 29px;
+}
+.form__inp-1 {
+    width: 375px;
+    height: 50px;
+    background: #FFFFFF;
+    border-radius: 0px;
+    margin-bottom: 14px;
+}
+.form__inp-1::placeholder{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #949494;
+}
+.form__inp-2 {
+    width: 375px;
+    height: 50px;
+    background: #FFFFFF;
+    border-radius: 0px;
+    margin-bottom: 14px;
+}
+.form__inp-2::placeholder{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #949494;
+}
+.form__textarea {
+    width: 375px;
+    height: 165px;
+    background: #FFFFFF;
+    border-radius: 0px;
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #DBDBDB;
+}
+.form__link {
+    background: #FFBD54;
+    padding: 15px 49px 14px 50px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+// FEEDBACK TEXT STYLES
+
+
+// MEDIA
+
+@media only screen and (max-width:1330px) {
+    .site-form{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+    }
+    .site-form__text{
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .google-map{
+        display: none;
+        margin: 0;
+    }
+    .site-form__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form__textarea{
+        width: 300px;
+    }
+
+    .form__inp-1{
+        width: 300px;
+    }
+    .form__inp-2{
+        width: 300px;
+    }
+}
+
+
+// MEDIA

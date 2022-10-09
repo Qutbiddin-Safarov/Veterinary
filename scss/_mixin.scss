@@ -1,0 +1,15 @@
+@mixin posAB {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+@mixin btnText {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}

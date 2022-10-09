@@ -1,0 +1,89 @@
+// HERO STYLES
+
+.hero-sec {
+    padding-top: 145.77px;
+    padding-bottom: 200px;
+    background-image: url('../../img/hero/hero-pet.png'),url('../../img//hero/parrot.png');
+    background-repeat: no-repeat;
+    background-position-x: 0px, right;
+    background-position-y: -90px, 400px;
+}
+.hero-container {
+    display: flex;
+}
+
+// HERO STYLES
+
+// HERO TEXT STYLES
+
+.hero-p-text{
+    width: 495px;
+}
+
+.site-h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 64px;
+    color: #333333;
+    margin-bottom: 29px;
+}
+.color-blue {
+    color: rgba(120, 192, 222, 1);
+}
+.hero-p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #949494;
+    margin-bottom: 38px;
+}
+.hero-btn {
+    width: 181px;
+    height: 50px;
+    background: #333333;
+    border: 0;
+    border-radius: 3px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.hero-btn:hover{
+    background: #FFBD54;
+    color: #333333;
+}
+.hero-btn:active{
+    opacity: 0.6;
+}
+// HERO TEXT STYLES
+
+// MEDIA
+@media only screen and (max-width:1300px){
+    .hero-sec{
+        background: url(../);
+    }
+    .hero-container {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    .hero-p-text{
+        width: auto;
+    }
+    
+}
+
+@media only screen and (max-width:360px){
+    .hero-img{
+        height: 300px;
+        width: 300px;
+    }
+    .site-h1{
+        font-size: 60px;
+    }
+}
+// MEDIA
