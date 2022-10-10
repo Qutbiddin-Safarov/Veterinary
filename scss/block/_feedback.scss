@@ -4,9 +4,7 @@
     height: 649px;
 }
 .feedback-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     padding-bottom: 272px;
 }
 .site-form {
@@ -26,19 +24,13 @@
 
 // FEEDBACK TEXT STYLES
 .form__h2 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
+    @include textProp-3;
     line-height: 62px;
     color: #FFFFFF;
     margin-top: 62px;
 }
 .form-p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #949494;
+    @include textProp-2;
     margin-bottom: 29px;
 }
 .form__inp-1 {
@@ -49,11 +41,7 @@
     margin-bottom: 14px;
 }
 .form__inp-1::placeholder{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    color: #949494;
+    @include textProp-2;
 }
 .form__inp-2 {
     width: 375px;
@@ -101,6 +89,7 @@
         justify-content: center;
         align-items: center;
         background-size: cover;
+        padding-bottom: 50px;
     }
     .site-form__text{
         margin: 0;
@@ -113,21 +102,32 @@
         margin: 0;
     }
     .site-form__text{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flexCol-center;
     }
 
     .form__textarea{
-        width: 300px;
+        width: 250px;
     }
 
     .form__inp-1{
-        width: 300px;
+        width: 250px;
     }
     .form__inp-2{
-        width: 300px;
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width:250px) {
+
+    .form__textarea{
+        width: 200px;
+    }
+
+    .form__inp-1{
+        width: 200px;
+    }
+    .form__inp-2{
+        width: 200px;
     }
 }
 

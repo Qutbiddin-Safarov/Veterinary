@@ -30,13 +30,8 @@
     margin-left: 47px;
 }
 .foote-navbar__link {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 21px;
-    color: #333333;
+    @include textProp-1;
 }
-
 .foote-navbar__link--hover:hover{
     color: #FFBD54;
 }
@@ -51,11 +46,9 @@
     margin-right: 92px;
 }
 .footer-text-5 {
-    font-style: normal;
-    font-weight: 500;
+    @include textProp-1;
     font-size: 14px;
     line-height: 18px;
-    color: #333333;
 }
 // FOOTER TEXT STYLES
 

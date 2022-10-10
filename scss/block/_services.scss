@@ -2,16 +2,11 @@
 
 .services-container {
     padding-bottom: 235px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexCol-center;
 }
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flexWrap-center;
     gap: 13px;
     position: relative;
 }
@@ -123,43 +118,31 @@
 
 // SERICES TEXT STYLES
 .services-h2 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 54px;
-    color: #333333;
+    @include textProp-3;
     margin-bottom: 80px;
 }
 
 .cards__text {
-    font-style: normal;
-    font-weight: 500;
+    @include textProp-1;
     font-size: 18px;
     line-height: 22px;
     display: flex;
     text-align: center;
-    color: #333333;
     margin-top: 129px;
 }
 .service-text {
     margin-left: 67px;
 }
 .service__h2 {
-    font-style: normal;
-    font-weight: 500;
+    @include textProp-1;
     font-size: 36px;
     line-height: 20px;
     display: flex;
     align-items: center;
-    color: #333333;
     margin-bottom: 18px;
 }
 .service__p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #949494;
+    @include textProp-2;
     margin-bottom: 9px;
 }
 .service__p-2{
@@ -248,6 +231,13 @@
     }
     .service__link-2{
         font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:510px) {
+    
+    .service-img{
+        display: none;
     }
 }
 

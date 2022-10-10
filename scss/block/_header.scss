@@ -22,13 +22,11 @@
 
 // NAVBAR-1 TEXT STYLES
 .navbar__address {
-    font-style: normal;
-    font-weight: 500;
+    @include textProp-1;
     font-size: 14px;
     line-height: 18px;
     display: flex;
     align-items: center;
-    color: #333333;
     margin-right: 128px;
     position: relative;
 }
@@ -57,11 +55,9 @@
 }
 
 .navbar__tel-link {
-    font-style: normal;
-    font-weight: 500;
+    @include textProp-1;
     font-size: 14px;
     line-height: 18px;
-    color: #333333;
     position: relative;
 }
 
@@ -96,11 +92,9 @@
 }
 
 .navbar__time {
-    font-style: normal;
-    font-weight: 500;
+    @include textProp-1;
     font-size: 14px;
     line-height: 18px;
-    color: #333333;
 }
 
 // NAVBAR-1 TEXT STYLES
@@ -153,11 +147,7 @@
     top: -5px;
 }
 .menu__link {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 21px;
-    color: #333333;
+    @include textProp-1;
 }
 
 .menu__link:hover {

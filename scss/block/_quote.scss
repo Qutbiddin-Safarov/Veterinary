@@ -10,10 +10,7 @@
     background-position-y: 40px;
 }
 .quote-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flexCol-center;
 }
 
 .quote-text{
@@ -24,21 +21,17 @@
 
 // QUOTE TEXT STYLES
 .quote {
-    font-style: normal;
-    font-weight: 400;
+    @include textProp-2;
     font-size: 20px;
     line-height: 26px;
     text-align: center;
-    color: #949494;
     margin-bottom: 70px;
 }
 .quote-author {
-    font-style: normal;
-    font-weight: 500;
+    @include textProp-1;
     font-size: 20px;
     line-height: 26px;
     text-align: center;
-    color: #333333;
 }
 // QUOTE TEXT STYLES
 
